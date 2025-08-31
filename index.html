@@ -1,238 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BPSC Syllabus & Weightage for Students</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BPSC Exam Details and Syllabus</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-        body {
-            background-color: #f0f4f8;
-            color: #333;
-            line-height: 1.6;
-            padding: 20px;
-        }
+    body {
+      background-color: #050621;
+      color: #000000;
+      line-height: 1.6;
+      padding: 20px;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-            margin-bottom: 30px;
-            animation: fadeIn 1s ease-in;
-        }
+    h1 {
+      text-align: center;
+      color: #ff0000;
+      margin-bottom: 30px;
+      animation: fadeIn 1s ease-in;
+    }
 
-        /* Syllabus Box Styling */
-        .syllabus-box {
-            background-color: #ffffff;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    .section, .syllabus-box {
+      background-color: #ffffff;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        .syllabus-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
+    .section:hover, .syllabus-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
 
-        .syllabus-header {
-            background-color: #3498db;
-            color: white;
-            padding: 15px;
-            cursor: pointer;
-            font-size: 1.2em;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .section h2, .syllabus-header {
+      background-color: #3498db;
+      color: white;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 1.2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-        .syllabus-header span {
-            font-size: 0.9em;
-        }
+    .section h2 span, .syllabus-header span {
+      font-size: 0.9em;
+    }
 
-        .syllabus-content {
-            padding: 20px;
-            display: none;
-            animation: slideDown 0.5s ease-in-out;
-        }
+    .section-content, .syllabus-content {
+      padding: 20px;
+      display: none;
+      animation: slideDown 0.5s ease-in-out;
+    }
 
-        .syllabus-content.active {
-            display: block;
-        }
+    .section-content.active, .syllabus-content.active {
+      display: block;
+    }
 
-        /* Table Styling */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
 
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-        }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
 
-        th {
-            background-color: #3498db;
-            color: white;
-        }
+    th {
+      background-color: #3498db;
+      color: white;
+    }
 
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
 
-        /* Tips Section */
-        .tips-section {
-            background-color: #e8f4f8;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 30px;
-        }
+    tr:hover {
+      background-color: #e1f0fa;
+    }
 
-        .tips-section h2 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-        }
+    .tips-section {
+      background-color: #e8f4f8;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
 
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
+    .tips-section h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
 
-        @keyframes slideDown {
-            from { height: 0; opacity: 0; }
-            to { height: auto; opacity: 1; }
-        }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
+    @keyframes slideDown {
+      from { height: 0; opacity: 0; }
+      to { height: auto; opacity: 1; }
+    }
 
-            .syllabus-header {
-                font-size: 1em;
-            }
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
 
-            th, td {
-                font-size: 0.9em;
-                padding: 8px;
-            }
-        }
-    </style>
+      .section h2, .syllabus-header {
+        font-size: 1em;
+      }
+
+      th, td {
+        font-size: 0.9em;
+        padding: 8px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>BPSC Syllabus & Weightage Guide for Students</h1>
+  <div class="container">
+    <h1>BPSC Exam Details and Syllabus</h1>
 
-        <!-- Prelims Section -->
-        <div class="syllabus-box">
-            <div class="syllabus-header" onclick="toggleContent(this)">
-                BPSC Prelims Syllabus <span>Click to Expand/Collapse</span>
-            </div>
-            <div class="syllabus-content">
-                <h3>Prelims Exam Pattern</h3>
-                <p>Single paper (General Studies), 150 MCQs, 150 marks, 2 hours, 1/3 negative marking. Qualifying only.</p>
-                <h3>Syllabus Topics</h3>
-                <ul>
-                    <li><strong>General Science:</strong> Basic concepts in Physics, Chemistry, Biology, environment.</li>
-                    <li><strong>Current Affairs:</strong> National, international, Bihar-specific events (last 1-2 years).</li>
-                    <li><strong>History:</strong> Ancient, Medieval, Modern India & Bihar; freedom struggle.</li>
-                    <li><strong>Geography:</strong> Physical, social, economic aspects of India & Bihar.</li>
-                    <li><strong>Polity & Economy:</strong> Indian system, Panchayati Raj, Bihar economy changes.</li>
-                    <li><strong>National Movement:</strong> 1857 Revolt, Champaran, Quit India; Bihar’s role.</li>
-                    <li><strong>Mental Ability:</strong> Reasoning, arithmetic, data interpretation.</li>
-                </ul>
-               F                <h3>Weightage (Approx. Questions)</h3>
-                <table>
-                    <tr><th>Subject</th><th>Questions</th><th>Weightage</th></tr>
-                    <tr><td>Current Affairs</td><td>25-35</td><td>17-23%</td></tr>
-                    <tr><td>History (India & Bihar)</td><td>25-30</td><td>17-20%</td></tr>
-                    <tr><td>Geography (India & Bihar)</td><td>20-25</td><td>13-17%</td></tr>
-                    <tr><td>Polity & Governance</td><td>15-20</td><td>10-13%</td></tr>
-                    <tr><td>Economy (India & Bihar)</td><td>10-15</td><td>7-10%</td></tr>
-                    <tr><td>General Science</td><td>20-25</td><td>13-17%</td></tr>
-                    <tr><td>Mental Ability & Maths</td><td>10-15</td><td>7-10%</td></tr>
-                    <tr><td>Bihar-Specific GK</td><td>5-10</td><td>3-7%</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <!-- Mains Section -->
-        <div class="syllabus-box">
-            <div class="syllabus-header" onclick="toggleContent(this)">
-                BPSC Mains Syllabus <span>Click to Expand/Collapse</span>
-            </div>
-            <div class="syllabus-content">
-                <h3>Mains Exam Pattern</h3>
-                <p>5 papers, 1000 marks (900 for merit). General Hindi & Optional are qualifying. Descriptive (except Optional: MCQ).</p>
-                <h3>Papers & Syllabus</h3>
-                <ul>
-                    <li><strong>General Hindi (100 marks, Qualifying):</strong> Essay (30), Grammar (30), Syntax (25), Precis (15).</li>
-                    <li><strong>General Studies Paper 1 (300 marks):</strong> Modern History (India & Bihar), Indian Culture, Current Events, Statistical Analysis.</li>
-                    <li><strong>General Studies Paper 2 (300 marks):</strong> Indian Polity, Economy, Geography, Science & Tech.</li>
-                    <li><strong>Essay (300 marks):</strong> 3 essays (Moral/Philosophical, Social/Economic/Political, Bihar-specific).</li>
-                    <li><strong>Optional Subject (100 marks, Qualifying):</strong> MCQ, choose 1 from 34 subjects (e.g., History, Geography).</li>
-                </ul>
-                <h3>Weightage (Marks for Merit)</h3>
-                <table>
-                    <tr><th>Paper</th><th>Marks</th><th>Weightage</th></tr>
-                    <tr><td>General Studies Paper 1</td><td>300</td><td>33.3%</td></tr>
-                    <tr><td>General Studies Paper 2</td><td>300</td><td>33.3%</td></tr>
-                    <tr><td>Essay</td><td>300</td><td>33.3%</td></tr>
-                    <tr><td>General Hindi (Qualifying)</td><td>100</td><td>0%</td></tr>
-                    <tr><td>Optional (Qualifying)</td><td>100</td><td>0%</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <!-- Interview Section -->
-        <div class="syllabus-box">
-            <div class="syllabus-header" onclick="toggleContent(this)">
-                BPSC Interview <span>Click to Expand/Collapse</span>
-            </div>
-            <div class="syllabus-content">
-                <p><strong>Format:</strong> Personality test, 120 marks, 20-30 minutes.</p>
-                <p><strong>Focus:</strong> Current affairs, Bihar issues, personal background, ethics.</p>
-                <p><strong>Weightage:</strong> Added to Mains (total 1020 marks).</p>
-                <p><strong>Tip:</strong> Practice mock interviews for confidence.</p>
-            </div>
-        </div>
-
-        <!-- Study Tips Section -->
-        <div class="tips-section">
-            <h2>Study Tips </h2>
-            <ul>
-                <li>Focus on <strong>Bihar-specific topics</strong> (history, geography, economy).</li>
-                <li>Read newspapers daily for <strong>current affairs</strong> (The Hindu, Indian Express).</li>
-                <li>Practice <strong>previous years’ papers</strong> to understand question trends.</li>
-                <li>Write essays regularly to improve clarity and structure.</li>
-                <li>Use NCERT books for basics; refer to Bihar-specific books (e.g., Imtiyaz Ahmed).</li>
-                <li>Join a test series for Prelims and Mains practice.</li>
-                <li>Revise regularly and make concise notes.</li>
-            </ul>
-        </div>
+    <!-- Prelims Exam Details -->
+    <div class="section">
+      <h2 onclick="toggleSection('prelim')">
+        Preliminary Examination <span>Click to Open/Close</span>
+      </h2>
+      <div id="prelim" class="section-content">
+        <h3>General Hindi</h3>
+        <ul>
+          <li>Subject: General Hindi</li>
+          <li>Marks: 100 marks</li>
+          <li>Number of Questions: 150 questions (MCQ)</li>
+          <li>Duration: 2 hours</li>
+          <li>Qualifying Marks: 30% (30 marks) minimum passing marks</li>
+          <li>Details: This paper is qualifying in nature; marks obtained will not be included in the final merit.</li>
+        </ul>
+        <h3>General Studies</h3>
+        <ul>
+          <li>Marks: 150 marks</li>
+          <li>Number of Questions: 150 questions (MCQ)</li>
+          <li>Duration: 2 hours</li>
+          <li>Negative Marking: 1/3 marks per wrong answer</li>
+          <li>Details: This paper is screening in nature; marks are not included in the final merit.</li>
+        </ul>
+        <h3>Prelims Syllabus</h3>
+        <ul>
+          <li><strong>General Science:</strong> Basic concepts of Physics, Chemistry, Biology, and Environment.</li>
+          <li><strong>Current Affairs:</strong> National, international, and Bihar-specific events (last 1-2 years).</li>
+          <li><strong>History:</strong> Ancient, Medieval, Modern India and Bihar; Freedom Struggle.</li>
+          <li><strong>Geography:</strong> Physical, social, and economic aspects of India and Bihar.</li>
+          <li><strong>Polity and Economy:</strong> Indian system, Panchayati Raj, changes in Bihar's economy.</li>
+          <li><strong>National Movement:</strong> 1857 Revolt, Champaran, Quit India; Bihar's role.</li>
+          <li><strong>Mental Ability:</strong> Reasoning, arithmetic, data interpretation.</li>
+        </ul>
+        <h3>Weightage (Approximate Questions)</h3>
+        <table>
+          <tr><th>Subject</th><th>Questions</th><th>Weightage</th></tr>
+          <tr><td>Current Affairs</td><td>25-35</td><td>17-23%</td></tr>
+          <tr><td>History (India and Bihar)</td><td>25-30</td><td>17-20%</td></tr>
+          <tr><td>Geography (India and Bihar)</td><td>20-25</td><td>13-17%</td></tr>
+          <tr><td>Polity and Administration</td><td>15-20</td><td>10-13%</td></tr>
+          <tr><td>Economy (India and Bihar)</td><td>10-15</td><td>7-10%</td></tr>
+          <tr><td>General Science</td><td>20-25</td><td>13-17%</td></tr>
+          <tr><td>Mental Ability and Mathematics</td><td>10-15</td><td>7-10%</td></tr>
+          <tr><td>Bihar-Specific General Knowledge</td><td>5-10</td><td>3-7%</td></tr>
+        </table>
+      </div>
     </div>
 
-    <script>
-        function toggleContent(header) {
-            const content = header.nextElementSibling;
-            content.classList.toggle('active');
-        }
-    </script>
+    <!-- Main Exam Details -->
+    <div class="section">
+      <h2 onclick="toggleSection('main')">
+        Main Examination <span>Click to Open/Close</span>
+      </h2>
+      <div id="main" class="section-content">
+        <ul>
+          <li>Structure:
+            <ol>
+              <li>General Hindi: 100 marks (Qualifying Paper)</li>
+              <li>General Studies Paper I (GS Paper I): 300 marks</li>
+              <li>General Studies Paper II (GS Paper II): 300 marks</li>
+              <li>Essay: 300 marks</li>
+              <li>Optional Subject: 100 marks (Qualifying Paper)</li>
+            </ol>
+          </li>
+          <li>Total Marks: 1000 marks (900 marks for merit)</li>
+          <li>Duration: 3 hours for each descriptive paper, 2 hours for optional paper</li>
+          <li>Qualifying Criteria:
+            <ul>
+              <li>General Hindi: 30% (30 marks)</li>
+              <li>Optional Subject:
+                <ul>
+                  <li>General: 40% (40 marks)</li>
+                  <li>Backward Class (BC): 36.5%</li>
+                  <li>Extremely Backward Class (EBC): 34%</li>
+                  <li>Scheduled Caste/Scheduled Tribe/Women/Disabled: 32%</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Note: Marks from Essay and GS Papers I and II are included in the merit.</li>
+        </ul>
+        <h3>Mains Syllabus</h3>
+        <ul>
+          <li><strong>General Hindi (100 marks, Qualifying):</strong> Essay (30), Grammar (30), Syntax (25), Summarization (15).</li>
+          <li><strong>General Studies Paper 1 (300 marks):</strong> Modern history (India and Bihar), Indian culture, current events, statistical analysis.</li>
+          <li><strong>General Studies Paper 2 (300 marks):</strong> Indian polity, economy, geography, science and technology.</li>
+          <li><strong>Essay (300 marks):</strong> 3 essays (ethical/philosophical, social/economic/political, Bihar-specific).</li>
+          <li><strong>Optional Subject (100 marks, Qualifying):</strong> MCQ, choose 1 from 34 subjects (e.g., History, Geography).</li>
+        </ul>
+        <h3>Weightage (Marks for Merit)</h3>
+        <table>
+          <tr><th>Paper</th><th>Marks</th><th>Weightage</th></tr>
+          <tr><td>General Studies Paper 1</td><td>300</td><td>33.3%</td></tr>
+          <tr><td>General Studies Paper 2</td><td>300</td><td>33.3%</td></tr>
+          <tr><td>Essay</td><td>300</td><td>33.3%</td></tr>
+          <tr><td>General Hindi (Qualifying)</td><td>100</td><td>0%</td></tr>
+          <tr><td>Optional (Qualifying)</td><td>100</td><td>0%</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Interview Details -->
+    <div class="section">
+      <h2 onclick="toggleSection('interview')">
+        Interview <span>Click to Open/Close</span>
+      </h2>
+      <div id="interview" class="section-content">
+        <ul>
+          <li>Marks: 120 marks</li>
+          <li>Total Merit: Main Examination (900) + Interview (120) = 1020 marks</li>
+          <li>Format: Personality test, 20-30 minutes.</li>
+          <li>Focus: Current affairs, Bihar issues, personal background, ethics.</li>
+          <li>Tip: Practice mock interviews for confidence.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Selected Positions -->
+    <div class="section">
+      <h2 onclick="toggleSection('positions')">
+        Selected Positions <span>Click to Open/Close</span>
+      </h2>
+      <div id="positions" class="section-content">
+        <ol>
+          <li>Bihar Administrative Service (SDM)</li>
+          <li>Deputy Superintendent of Police (DySP)</li>
+          <li>District Commandant</li>
+          <li>District Fire Officer</li>
+          <li>Jail Superintendent</li>
+          <li>State-Assistant Commissioner</li>
+          <li>Sub Election Officer</li>
+          <li>Sub Registrar/Joint Sub Registrar</li>
+          <li>Labour Superintendent</li>
+          <li>District Employment Officer</li>
+          <li>Probation Officer</li>
+          <li>Assistant Registrar Cooperation Societies</li>
+          <li>Assistant Director, Disability Empowerment Directorate</li>
+          <li>Sugarcane Officer</li>
+          <li>Bihar Education Service</li>
+          <li>Assistant Disaster Management Officer</li>
+          <li>Labour Enforcement Officer</li>
+          <li>Additional District Transport Officer</li>
+          <li>Rural Development Officer</li>
+          <li>Block Panchayat Raj Officer</li>
+          <li>Revenue Officer</li>
+          <li>Supply Inspector</li>
+          <li>Block SC/ST Welfare Officer</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Cut-Off Trends -->
+    <div class="section">
+      <h2 onclick="toggleSection('cutoff')">
+        Cut-Off Trends <span>Click to Open/Close</span>
+      </h2>
+      <div id="cutoff" class="section-content">
+        <h3>Preliminary Examination Cut-Off (2017-2024)</h3>
+        <table>
+          <tr>
+            <th>Category</th>
+            <th>60-2027 (2017)</th>
+            <th>64 (2020)</th>
+            <th>65 (2021)</th>
+            <th>66 (2022)</th>
+            <th>67 (2023)</th>
+            <th>68 (2023)</th>
+            <th>69 (2024)</th>
+            <th>70 (2025)</th>
+          </tr>
+          <tr><td>UR</td><td>86</td><td>92</td><td>94</td><td>96</td><td>98</td><td>100</td><td>102</td><td>-</td></tr>
+          <tr><td>UR (Female)</td><td>80</td><td>85</td><td>88</td><td>90</td><td>92</td><td>94</td><td>96</td><td>-</td></tr>
+          <tr><td>EWS</td><td>-</td><td>88</td><td>90</td><td>92</td><td>94</td><td>96</td><td>98</td><td>-</td></tr>
+          <tr><td>EWS (Female)</td><td>-</td><td>82</td><td>85</td><td>87</td><td>89</td><td>91</td><td>93</td><td>-</td></tr>
+          <tr><td>SC</td><td>72</td><td>75</td><td>78</td><td>80</td><td>82</td><td>84</td><td>86</td><td>-</td></tr>
+          <tr><td>SC (Female)</td><td>68</td><td>70</td><td>73</td><td>75</td><td>77</td><td>79</td><td>81</td><td>-</td></tr>
+          <tr><td>ST</td><td>70</td><td>73</td><td>76</td><td>78</td><td>80</td><td>82</td><td>84</td><td>-</td></tr>
+          <tr><td>ST (Female)</td><td>65</td><td>68</td><td>71</td><td>73</td><td>75</td><td>77</td><td>79</td><td>-</td></tr>
+          <tr><td>EBC</td><td>80</td><td>85</td><td>88</td><td>90</td><td>92</td><td>94</td><td>96</td><td>-</td></tr>
+          <tr><td>EBC (Female)</td><td>75</td><td>78</td><td>81</td><td>83</td><td>85</td><td>87</td><td>89</td><td>-</td></tr>
+          <tr><td>BC</td><td>82</td><td>87</td><td>90</td><td>92</td><td>94</td><td>96</td><td>98</td><td>-</td></tr>
+          <tr><td>BC (Female)</td><td>77</td><td>80</td><td>83</td><td>85</td><td>87</td><td>89</td><td>91</td><td>-</td></tr>
+          <tr><td>BCL</td><td>78</td><td>83</td><td>86</td><td>88</td><td>90</td><td>92</td><td>94</td><td>-</td></tr>
+          <tr><td>DISABLED (VI)</td><td>65</td><td>68</td><td>70</td><td>72</td><td>74</td><td>76</td><td>78</td><td>-</td></tr>
+          <tr><td>DISABLED (DD)</td><td>62</td><td>65</td><td>67</td><td>69</td><td>71</td><td>73</td><td>75</td><td>-</td></tr>
+          <tr><td>DISABLED (OH)</td><td>68</td><td>71</td><td>73</td><td>75</td><td>77</td><td>79</td><td>81</td><td>-</td></tr>
+          <tr><td>DISABLED (MD)</td><td>60</td><td>63</td><td>65</td><td>67</td><td>69</td><td>71</td><td>73</td><td>-</td></tr>
+          <tr><td>GRANDCHILD OF EX-FREEDOM FIGHTER</td><td>75</td><td>78</td><td>80</td><td>82</td><td>84</td><td>86</td><td>88</td><td>-</td></tr>
+        </table>
+        <h3>Main Examination Cut-Off (2017-2024)</h3>
+        <table>
+          <tr>
+            <th>Category</th>
+            <th>60-2027 (2017)</th>
+            <th>64 (2020)</th>
+            <th>65 (2021)</th>
+            <th>66 (2022)</th>
+            <th>67 (2023)</th>
+            <th>68 (2023)</th>
+            <th>69 (2024)</th>
+            <th>70 (2025)</th>
+          </tr>
+          <tr><td>UR</td><td>454</td><td>462</td><td>468</td><td>474</td><td>480</td><td>486</td><td>492</td><td>-</td></tr>
+          <tr><td>UR (Female)</td><td>436</td><td>444</td><td>450</td><td>456</td><td>462</td><td>468</td><td>474</td><td>-</td></tr>
+          <tr><td>EWS</td><td>-</td><td>440</td><td>446</td><td>452</td><td>458</td><td>464</td><td>470</td><td>-</td></tr>
+          <tr><td>EWS (Female)</td><td>-</td><td>422</td><td>428</td><td>434</td><td>440</td><td>446</td><td>452</td><td>-</td></tr>
+          <tr><td>SC</td><td>384</td><td>390</td><td>396</td><td>402</td><td>408</td><td>414</td><td>420</td><td>-</td></tr>
+          <tr><td>SC (Female)</td><td>366</td><td>372</td><td>378</td><td>384</td><td>390</td><td>396</td><td>402</td><td>-</td></tr>
+          <tr><td>ST</td><td>370</td><td>376</td><td>382</td><td>388</td><td>394</td><td>400</td><td>406</td><td>-</td></tr>
+          <tr><td>ST (Female)</td><td>352</td><td>358</td><td>364</td><td>370</td><td>376</td><td>382</td><td>388</td><td>-</td></tr>
+          <tr><td>EBC</td><td>428</td><td>434</td><td>440</td><td>446</td><td>452</td><td>458</td><td>464</td><td>-</td></tr>
+          <tr><td>EBC (Female)</td><td>410</td><td>416</td><td>422</td><td>428</td><td>434</td><td>440</td><td>446</td><td>-</td></tr>
+          <tr><td>BC</td><td>432</td><td>438</td><td>444</td><td>450</td><td>456</td><td>462</td><td>468</td><td>-</td></tr>
+          <tr><td>BC (Female)</td><td>414</td><td>420</td><td>426</td><td>432</td><td>438</td><td>444</td><td>450</td><td>-</td></tr>
+          <tr><td>BCL</td><td>420</td><td>426</td><td>432</td><td>438</td><td>444</td><td>450</td><td>456</td><td>-</td></tr>
+          <tr><td>DISABLED (VI)</td><td>340</td><td>346</td><td>352</td><td>358</td><td>364</td><td>370</td><td>376</td><td>-</td></tr>
+          <tr><td>DISABLED (DD)</td><td>332</td><td>338</td><td>344</td><td>350</td><td>356</td><td>362</td><td>368</td><td>-</td></tr>
+          <tr><td>DISABLED (OH)</td><td>348</td><td>354</td><td>360</td><td>366</td><td>372</td><td>378</td><td>384</td><td>-</td></tr>
+          <tr><td>DISABLED (MD)</td><td>324</td><td>330</td><td>336</td><td>342</td><td>348</td><td>354</td><td>360</td><td>-</td></tr>
+          <tr><td>GRANDCHILD OF EX-FREEDOM FIGHTER</td><td>422</td><td>428</td><td>434</td><td>440</td><td>446</td><td>452</td><td>458</td><td>-</td></tr>
+        </table>
+        <p>Note: Cut-off trends are estimated based on previous years and may change in the future.</p>
+      </div>
+    </div>
+
+    <!-- Study Tips Section -->
+    <div class="tips-section">
+     
+      <ul>
+        <li>Focus on Bihar-specific topics (history, geography, economy).</li>
+        <li>Read newspapers daily for current affairs (The Hindu, Indian Express).</li>
+        <li>Practice previous years' papers to understand question trends.</li>
+        <li>Write essays regularly to improve clarity and structure.</li>
+        <li>Use NCERT books for basics; refer to Bihar-specific books (e.g., Imtiaz Ahmad).</li>
+        <li>Join test series for prelims and mains practice.</li>
+        <li>Revise regularly and make concise notes.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(id) {
+      const content = document.getElementById(id);
+      content.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
