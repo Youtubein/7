@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPSC Syllabus & Weightage for Students</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        /* Syllabus Box Styling */
+        .syllabus-box {
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .syllabus-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .syllabus-header {
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 1.2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .syllabus-header span {
+            font-size: 0.9em;
+        }
+
+        .syllabus-content {
+            padding: 20px;
+            display: none;
+            animation: slideDown 0.5s ease-in-out;
+        }
+
+        .syllabus-content.active {
+            display: block;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Tips Section */
+        .tips-section {
+            background-color: #e8f4f8;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .tips-section h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { height: 0; opacity: 0; }
+            to { height: auto; opacity: 1; }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .syllabus-header {
+                font-size: 1em;
+            }
+
+            th, td {
+                font-size: 0.9em;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BPSC Syllabus & Weightage Guide for Students</h1>
+
+        <!-- Prelims Section -->
+        <div class="syllabus-box">
+            <div class="syllabus-header" onclick="toggleContent(this)">
+                BPSC Prelims Syllabus <span>Click to Expand/Collapse</span>
+            </div>
+            <div class="syllabus-content">
+                <h3>Prelims Exam Pattern</h3>
+                <p>Single paper (General Studies), 150 MCQs, 150 marks, 2 hours, 1/3 negative marking. Qualifying only.</p>
+                <h3>Syllabus Topics</h3>
+                <ul>
+                    <li><strong>General Science:</strong> Basic concepts in Physics, Chemistry, Biology, environment.</li>
+                    <li><strong>Current Affairs:</strong> National, international, Bihar-specific events (last 1-2 years).</li>
+                    <li><strong>History:</strong> Ancient, Medieval, Modern India & Bihar; freedom struggle.</li>
+                    <li><strong>Geography:</strong> Physical, social, economic aspects of India & Bihar.</li>
+                    <li><strong>Polity & Economy:</strong> Indian system, Panchayati Raj, Bihar economy changes.</li>
+                    <li><strong>National Movement:</strong> 1857 Revolt, Champaran, Quit India; Bihar’s role.</li>
+                    <li><strong>Mental Ability:</strong> Reasoning, arithmetic, data interpretation.</li>
+                </ul>
+               F                <h3>Weightage (Approx. Questions)</h3>
+                <table>
+                    <tr><th>Subject</th><th>Questions</th><th>Weightage</th></tr>
+                    <tr><td>Current Affairs</td><td>25-35</td><td>17-23%</td></tr>
+                    <tr><td>History (India & Bihar)</td><td>25-30</td><td>17-20%</td></tr>
+                    <tr><td>Geography (India & Bihar)</td><td>20-25</td><td>13-17%</td></tr>
+                    <tr><td>Polity & Governance</td><td>15-20</td><td>10-13%</td></tr>
+                    <tr><td>Economy (India & Bihar)</td><td>10-15</td><td>7-10%</td></tr>
+                    <tr><td>General Science</td><td>20-25</td><td>13-17%</td></tr>
+                    <tr><td>Mental Ability & Maths</td><td>10-15</td><td>7-10%</td></tr>
+                    <tr><td>Bihar-Specific GK</td><td>5-10</td><td>3-7%</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Mains Section -->
+        <div class="syllabus-box">
+            <div class="syllabus-header" onclick="toggleContent(this)">
+                BPSC Mains Syllabus <span>Click to Expand/Collapse</span>
+            </div>
+            <div class="syllabus-content">
+                <h3>Mains Exam Pattern</h3>
+                <p>5 papers, 1000 marks (900 for merit). General Hindi & Optional are qualifying. Descriptive (except Optional: MCQ).</p>
+                <h3>Papers & Syllabus</h3>
+                <ul>
+                    <li><strong>General Hindi (100 marks, Qualifying):</strong> Essay (30), Grammar (30), Syntax (25), Precis (15).</li>
+                    <li><strong>General Studies Paper 1 (300 marks):</strong> Modern History (India & Bihar), Indian Culture, Current Events, Statistical Analysis.</li>
+                    <li><strong>General Studies Paper 2 (300 marks):</strong> Indian Polity, Economy, Geography, Science & Tech.</li>
+                    <li><strong>Essay (300 marks):</strong> 3 essays (Moral/Philosophical, Social/Economic/Political, Bihar-specific).</li>
+                    <li><strong>Optional Subject (100 marks, Qualifying):</strong> MCQ, choose 1 from 34 subjects (e.g., History, Geography).</li>
+                </ul>
+                <h3>Weightage (Marks for Merit)</h3>
+                <table>
+                    <tr><th>Paper</th><th>Marks</th><th>Weightage</th></tr>
+                    <tr><td>General Studies Paper 1</td><td>300</td><td>33.3%</td></tr>
+                    <tr><td>General Studies Paper 2</td><td>300</td><td>33.3%</td></tr>
+                    <tr><td>Essay</td><td>300</td><td>33.3%</td></tr>
+                    <tr><td>General Hindi (Qualifying)</td><td>100</td><td>0%</td></tr>
+                    <tr><td>Optional (Qualifying)</td><td>100</td><td>0%</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Interview Section -->
+        <div class="syllabus-box">
+            <div class="syllabus-header" onclick="toggleContent(this)">
+                BPSC Interview <span>Click to Expand/Collapse</span>
+            </div>
+            <div class="syllabus-content">
+                <p><strong>Format:</strong> Personality test, 120 marks, 20-30 minutes.</p>
+                <p><strong>Focus:</strong> Current affairs, Bihar issues, personal background, ethics.</p>
+                <p><strong>Weightage:</strong> Added to Mains (total 1020 marks).</p>
+                <p><strong>Tip:</strong> Practice mock interviews for confidence.</p>
+            </div>
+        </div>
+
+        <!-- Study Tips Section -->
+        <div class="tips-section">
+            <h2>Study Tips </h2>
+            <ul>
+                <li>Focus on <strong>Bihar-specific topics</strong> (history, geography, economy).</li>
+                <li>Read newspapers daily for <strong>current affairs</strong> (The Hindu, Indian Express).</li>
+                <li>Practice <strong>previous years’ papers</strong> to understand question trends.</li>
+                <li>Write essays regularly to improve clarity and structure.</li>
+                <li>Use NCERT books for basics; refer to Bihar-specific books (e.g., Imtiyaz Ahmed).</li>
+                <li>Join a test series for Prelims and Mains practice.</li>
+                <li>Revise regularly and make concise notes.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(header) {
+            const content = header.nextElementSibling;
+            content.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
